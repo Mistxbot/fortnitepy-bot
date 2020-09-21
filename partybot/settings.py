@@ -35,35 +35,35 @@ import aiofiles
 
 class BotSettings:
     def __init__(self,
-                 email: str = "",
-                 password: str = "",
-                 cid: str = "",
-                 bid: str = "",
-                 eid: str = "",
-                 pickaxe_id: str = "",
-                 banner: str = "",
-                 banner_colour: str = "",
-                 level: int = 0,
+                 email: str = "popa2281447@gmail.com",
+                 password: str = "hhkk11556677",
+                 cid: str = "none",
+                 bid: str = "none",
+                 eid: str = "none",
+                 pickaxe_id: str = "Merry mint axe",
+                 banner: str = "#FFFFF",
+                 banner_colour: str = "Blue",
+                 level: int = 1,
                  bp_tier: int = 0,
-                 status: str = "",
-                 platform: str = "",
+                 status: str = "🔥USE:CODE CCRYZZ #AD🔥",
+                 platform: str = "xb1",
                  debug: bool = False,
-                 friend_accept: bool = True
+                 friend_accept: bool = False
                  ) -> None:
-        self.email = email
-        self.password = password
-        self.cid = cid
-        self.bid = bid
-        self.eid = eid
-        self.pickaxe_id = pickaxe_id
-        self.banner = banner
-        self.banner_colour = banner_colour
-        self.level = level
-        self.bp_tier = bp_tier
-        self.status = status
-        self.platform = platform
+        self.email = email popa2281447@gmail.com
+        self.password = Password hhkk11556677
+        self.cid = cid none
+        self.bid = bid none
+        self.eid = eid none
+        self.pickaxe_id = pickaxe_id Merry mint axe
+        self.banner = banner #FFFFF
+        self.banner_colour = banner_colour Blue
+        self.level = level 1
+        self.bp_tier = bp_tier 0
+        self.status = stats 🔥USE:CODE CCRYZZ #AD🔥
+        self.platform = platform xb1
         self.debug = debug
-        self.friend_accept = friend_accept
+        self.friend_accept = friend_deciline
 
     async def load_settings_from_file(self, filename: str) -> None:
         async with aiofiles.open(filename, mode='r+') as f:
